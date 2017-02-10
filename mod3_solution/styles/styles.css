@@ -20,11 +20,15 @@ input[type="text"] {
 .dctrl-li{
   padding: 5px;
 }
+.dctrl-li p{
+  margin-top: 10px;
+}
 .dctrl-btn{
     background-color: #d4b1f4;
     border-radius: 5%;
     border: none;
-
+    left: 550px;
+    position: absolute;
 }
 .dctrl-btn:hover{
   background-color: #eddefa;
