@@ -1,0 +1,11 @@
+<div>
+  <ol>
+    <li ng-repeat="item in $ctrl.data.menu_items">
+      <h5>{{item.name | uppercase }}</h5>
+      Description: {{item.description}}
+      <strong ng-if="item.price_small">Small: </strong>{{item.price_small | currency}}
+      <strong ng-if="item.price_large">Large: </strong>{{item.price_large | currency}}
+    </li>
+    <ui-view></ui-view>
+  </ol>
+</div>
