@@ -6,6 +6,5 @@
   function ItemsController(items) {
     var ctrl = this;
     ctrl.items = items;
-    console.log(ctrl);
   }
 })();

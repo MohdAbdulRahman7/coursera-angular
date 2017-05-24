@@ -1,11 +1,11 @@
-<div>
-  <ol>
+<div class="categories well well-lg">
+  <ul class="list-unstyled">
     <li ng-repeat="category in $ctrl.data">
       <a ui-sref="items({categoryShortName:category.short_name})">
-      {{category.name}}
+      <button type="button" class="glyphicon glyphicon-cutlery"></button>{{category.name}}
       </a>
       <p>
-        {{category.special_instructions}}
+        <span ng-if="category.special_instructions" class="glyphicon glyphicon-info-sign"></span>{{category.special_instructions}}
       </p>
     </li>
   </ul>
